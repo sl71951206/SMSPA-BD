@@ -40,15 +40,15 @@ CREATE TABLE `promociones` (
   `estado` bit(1) NOT NULL,
   `fecha_fin` date NOT NULL,
   `fecha_inicio` date NOT NULL,
-  `tipo` enum('PORCENTUAL','EN_EFECTIVO') NOT NULL,
+  `tipo` enum('PORCENTUAL','EFECTIVO') NOT NULL,
   `titulo` varchar(500) NOT NULL UNIQUE,
   `url_imagen` varchar(1000) DEFAULT NULL
 );
 
 INSERT INTO promociones (descripcion, descuento, estado, fecha_fin, fecha_inicio, tipo, titulo, url_imagen) VALUES
-('¡Relájate al máximo con un 20% de descuento en masajes!', 20, 1, '2024-04-31', '2024-03-01', 'PORCENTUAL', 'Descuento en Masajes', 'https://cdn.discordapp.com/attachments/1209921567627411577/1209943845392089088/01-3760347840.png?ex=65e8c304&is=65d64e04&hm=1e418c6ec0df3a9bf657d209410a5754b427eb352ff28c2e281051d0f0ede11e&'),
+('¡Relájate al máximo con un 20% de descuento en masajes!', 20, 1, '2024-04-30', '2024-03-01', 'PORCENTUAL', 'Descuento en Masajes', 'https://cdn.discordapp.com/attachments/1209921567627411577/1209943845392089088/01-3760347840.png?ex=65e8c304&is=65d64e04&hm=1e418c6ec0df3a9bf657d209410a5754b427eb352ff28c2e281051d0f0ede11e&'),
 ('Renueva tu piel con un tratamiento facial y obtén un 15% de descuento', 15, 0, '2024-04-15', '2024-03-01', 'PORCENTUAL', 'Descuento en Tratamiento Facial', NULL),
-('Disfruta de un día de spa completo por $12 menos', 12, 1, '2024-04-30', '2024-02-15', 'EN_EFECTIVO', 'Oferta Día de Spa', 'https://cdn.discordapp.com/attachments/1209921567627411577/1209943919131885698/Promocion-especial-de-los-Sabados-en-Spa-Oleo-Salud-Web-Web-3752359945.jpg?ex=65e8c315&is=65d64e15&hm=b1be726e8656c7a53895309dd15c6fca9607161b01705e70c06fdd20ae0032af&'),
+('Disfruta de un día de spa completo por $12 menos', 12, 1, '2024-04-30', '2024-02-15', 'EFECTIVO', 'Oferta Día de Spa', 'https://cdn.discordapp.com/attachments/1209921567627411577/1209943919131885698/Promocion-especial-de-los-Sabados-en-Spa-Oleo-Salud-Web-Web-3752359945.jpg?ex=65e8c315&is=65d64e15&hm=b1be726e8656c7a53895309dd15c6fca9607161b01705e70c06fdd20ae0032af&'),
 ('Inicia tu semana con energía: 10% de descuento en clases de yoga', 10, 0, '2024-03-31', '2024-02-01', 'PORCENTUAL', 'Descuento en Clases de Yoga', NULL),
 ('¡Reserva ahora y obtén un 25% de descuento en cualquier tratamiento!', 25, 0, '2024-02-15', '2024-01-01', 'PORCENTUAL', 'Descuento en Reservas', NULL);
 
